@@ -18,61 +18,61 @@ const MultiRadio = ({onValueChange,errorState,question,questionName,answers,begi
 
         // console.log('answer_title :>> ',begin,end);
            return (
-            <div key={answer.id} className="answer-item d-flex justify-content-between bg-light p-2">
-            <div className="d-flex align-items-center mr-2 w-25">
+            <div key={answer.id} className="answer-item d-flex justify-content-between bg-light p-2" style={{minWidth: '300px', overflow:'scroll'}}>
+            <div className="d-inline-flex align-items-center mr-2 w-25" style={{minWidth: '100px', overflow:'scroll'}}>
                 {value}
             </div>
-         
-            <div className="d-flex flex-column"> 
-                <input type="radio"
-                        onChange={(e)=>{handleOnChanged(e, index) }}
-                        className="mr-2 " 
-                        name={value} 
-                        value='1' />
-            </div>
-            <div className="d-flex flex-column"> 
-                <input  onChange={(e)=>{handleOnChanged(e, index)}} 
-                        type="radio" 
-                        className="mr-2 " 
-                        name={value} 
-                        value='2'/>
-            </div>
-            <div className="d-flex flex-column"> 
-                <input onChange={(e)=>{handleOnChanged(e, index)}} 
-                        type="radio" 
-                        className="mr-2 " 
-                        name={value} 
-                        value='3'/>
-            </div>
-            <div className="d-flex flex-column"> 
-                <input onChange={(e)=>{handleOnChanged(e, index)}} 
-                        type="radio" 
-                        className="mr-2 " 
-                        name={value} 
-                        value='4'/>
-            </div>
-            <div className="d-flex flex-column"> 
-                <input onChange={(e)=>{handleOnChanged(e, index)}} 
-                        type="radio" 
-                        className="mr-2 " 
-                        name={value} 
-                        value='5'/>
-            </div>
-            <div className="d-flex flex-column"> 
-                <input onChange={(e)=>{handleOnChanged(e, index)}} 
-                        type="radio" 
-                        className="mr-2 " 
-                        name={value} 
-                        value='6'/>
-            </div>
-            <div className="d-flex flex-column"> 
-                <input onChange={(e)=>{handleOnChanged(e, index)}} 
-                        type="radio" 
-                        className="mr-2 " 
-                        name={value} 
-                        value='7'/>
-            </div>
-
+                <div className='d-flex justify-content-between w-75' style={{minWidth: '100px'}}>
+                    <div className="d-flex flex-column"> 
+                        <input type="radio"
+                                onChange={(e)=>{handleOnChanged(e, index) }}
+                                className="mr-2 " 
+                                name={value} 
+                                value='1' />
+                    </div>
+                    <div className="d-flex flex-column"> 
+                        <input  onChange={(e)=>{handleOnChanged(e, index)}} 
+                                type="radio" 
+                                className="mr-2 " 
+                                name={value} 
+                                value='2'/>
+                    </div>
+                    <div className="d-flex flex-column"> 
+                        <input onChange={(e)=>{handleOnChanged(e, index)}} 
+                                type="radio" 
+                                className="mr-2 " 
+                                name={value} 
+                                value='3'/>
+                    </div>
+                    <div className="d-flex flex-column"> 
+                        <input onChange={(e)=>{handleOnChanged(e, index)}} 
+                                type="radio" 
+                                className="mr-2 " 
+                                name={value} 
+                                value='4'/>
+                    </div>
+                    <div className="d-flex flex-column"> 
+                        <input onChange={(e)=>{handleOnChanged(e, index)}} 
+                                type="radio" 
+                                className="mr-2 " 
+                                name={value} 
+                                value='5'/>
+                    </div>
+                    <div className="d-flex flex-column"> 
+                        <input onChange={(e)=>{handleOnChanged(e, index)}} 
+                                type="radio" 
+                                className="mr-2 " 
+                                name={value} 
+                                value='6'/>
+                    </div>
+                    <div className="d-flex flex-column"> 
+                        <input onChange={(e)=>{handleOnChanged(e, index)}} 
+                                type="radio" 
+                                className="mr-2 " 
+                                name={value} 
+                                value='7'/>
+                    </div>
+                </div>
         </div>
            )
     })
@@ -93,7 +93,7 @@ const MultiRadio = ({onValueChange,errorState,question,questionName,answers,begi
                             {end}
                         </div>
                     </div>
-                    <div className="answer-item d-flex justify-content-between p-2">
+                    <div className="answer-item d-flex justify-content-between p-2" style={{minWidth: '200px'}}>
                         <div className="d-flex align-items-center   w-25">
                             
                         </div>

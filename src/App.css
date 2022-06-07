@@ -51,7 +51,8 @@ h2,h3,h4,h5{
   background-color: #007699;
   border: none;
   width: 100%;
-  height: 40px;
+  min-height: 40px;
+  max-height: 60px;
   top: 0px;
   position: relative;
 
@@ -240,11 +241,7 @@ mybtn:active {
   width: 100%;
   text-align: center;
 }
-.footer p{
-  line-height: 1px;
-}
-
-
+  
 
 /* MODAL---------------------------------------------------- */
 /* The Modal (background) */
@@ -268,7 +265,8 @@ mybtn:active {
   padding: 20px;
   padding-bottom: 30px;
   border: 1px solid #888;
-  width: 400px; /* Could be more or less, depending on screen size */
+  min-width: 250px;
+  max-width: 400px; /* Could be more or less, depending on screen size */
 }
 .modal-message{
     background: rgb(217, 214, 214);
@@ -305,6 +303,9 @@ and (min-width : 1824px) {
 /* Small screens */
 
 @media only screen and (max-width:700px){
+  /* .sector-head p{
+    font-size: small!important;
+  } */
 
 }
 

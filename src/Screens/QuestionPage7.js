@@ -73,7 +73,7 @@ const QuestionPage7 = () => {
         {question}
         
         
-        <Footer key={'footer'} title={ans24.value==="Yes" ? 'Retake' : 'Submit'} onTap={onTapped}  button_state='true' load={'100%'} page={8}></Footer>
+        <Footer key={'footer'} title={ans24.value==="Yes" ? 'Another Survey' : 'Submit'} onTap={onTapped}  button_state='true' load={'100%'} page={8}></Footer>
       </div>
      );
 }

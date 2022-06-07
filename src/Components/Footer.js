@@ -28,15 +28,15 @@ const Footer  = ({onTap, button_state,title, load, page}) => {
         <>
              <div>
                   {/* <!-- NAVIGATOR AND PROGRESS --> */}
-                    <div className="d-flex justify-content-between mt-3 mb-5 pb-3">
-                        <div>
+                    <div className="d-flex justify-content-between flex-wrap mt-3 mb-5 pb-3">
+                        <div className="d-flex">
                             {button}
                             <button onClick={()=>{onTap()}}  className="mybtn bg-white rounded p-2 pl-3 pr-3">
                             {title}
                             </button>
                         </div>
 
-                        <div className="d-flex flex-row  align-items-center">
+                        <div className="d-flex flex-row  flex-wrap mt-2 align-items-center">
                             <div className="progress">
                                 <div className="progress-inner" style={{width: load}}></div>
                             </div>
@@ -59,11 +59,11 @@ const Footer  = ({onTap, button_state,title, load, page}) => {
                                     </span>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-md">
+                            <div className="d-flex flex-wrap justify-content-between">
+                                <div className="col-md d-inline w-50">
                                     <button className="btn btn-danger" onClick={closebtn}>Cancel</button>
                                 </div>
-                                <div className="col-md text-right">
+                                <div className="col-md text-right w-50">
                                     <a className="btn primary-btn pl-3 pr-3" href="/">Clear</a>
                                 </div>
                             </div>
