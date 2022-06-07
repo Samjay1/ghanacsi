@@ -241,7 +241,11 @@ mybtn:active {
   width: 100%;
   text-align: center;
 }
-  
+.line-height{
+  line-height: 15px;
+}
+
+
 
 /* MODAL---------------------------------------------------- */
 /* The Modal (background) */
