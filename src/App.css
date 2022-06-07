@@ -1,0 +1,325 @@
+*{
+  font-family: "Google Sans", "Roboto", Helvetica, Arial, sans-serif;
+  color: #202124;
+  text-decoration: none;
+ font-size: 1.0em;
+}
+
+body{
+  background-color: #f5fcff;
+}
+
+/* MAIN HEAD WITH LOGO */
+.main-body{
+  max-width: 90%;
+  width: 640px;;
+  margin: 30px auto;
+}
+
+
+.logo-image {
+  width:130px;
+}
+
+.icon-svg {
+  width:60px;
+}
+
+.icon-small {
+  width:25px;
+}
+
+
+.main-body-head{
+  /* border: 1px solid #d2d4d4; */
+  border-top: 13px solid #007699 ;
+  border-radius: 10px;
+}
+
+h2,h3,h4,h5{
+  font-weight: 400;
+}
+/* MAIN HEAD WITH LOGO */
+
+/* CONTENT */
+.sector{
+  background: #fff;
+}
+.sector-head{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #007699;
+  border: none;
+  width: 100%;
+  height: 40px;
+  top: 0px;
+  position: relative;
+
+}
+.sector-head p{
+  font-weight: 400;
+}
+.sector-body{
+  border: 1px solid #d2d4d4;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sector-none{
+  background-color: #007699;
+  border: 2px solid #007699;
+}
+
+.question-body{
+  border-radius: 10px;
+  border: 1px solid #d2d4d4;
+  background: #fff;
+}
+
+input[type=checkbox] {
+  position: relative;
+    cursor: pointer;
+    
+}
+
+/* INPUT DESIGNS */
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background-color:#f5fcff;
+  border: 1px solid black;
+}
+input[type=checkbox]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color:#007699;
+  /* border: 2px solid black; */
+}
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
+
+/*  */
+
+input[type='radio']:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #f5fcff;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid rgb(107, 107, 107);
+}
+
+input[type='radio']:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #007699;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  padding: 1px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.text-input{
+  border-bottom: 1px solid rgb(107, 107, 107)!important;
+}
+.text-input:hover{
+  border-bottom: 1px solid rgb(30, 29, 29)!important;
+  background: #c0edfa;
+  color: black;
+  transition: 1s ease;
+}
+.text-input:focus{
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+}
+/* INPUT DESIGNS */
+
+/* CONTENT */
+
+.icon{
+  width: 25px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 1px 8px;
+  font-weight: 900;
+}
+
+/* NAVIGATOR AND PROGRESS */
+.primary-text{
+  color: #007699;
+}
+.primary-btn{
+  background-color: #007699;
+  color: white;
+}
+.primary-btn:hover{
+  background-color: #0598c5;
+}
+.mybtn{
+  color: #007699;
+  border: 1px solid gainsboro;
+  box-shadow: 1px 5px 5px gainsboro;
+}
+mybtn:hover {
+  text-decoration: none;
+}
+
+mybtn:link {
+  text-decoration: none;
+}
+
+mybtn:visited {
+  text-decoration: none;
+}
+
+mybtn:active {
+  text-decoration: none;
+}
+
+.mybtn:hover{
+  background-color: #007699!important;
+  color: white;
+  border: 1px solid #007699;
+}
+.progress {
+  border-radius: 40px;
+  width: 184px;
+  height: 10px;
+  min-width: 184px;
+  min-height: 10px;
+  background: #a2a5a9;
+}
+
+.progress-inner {
+  border-radius: 40px;
+  height: 10px;
+  min-height: 10px;
+  background: #007699;
+}
+
+
+.showDesign{
+  /* border:1px solid red; */
+  visibility: hidden;
+}
+/* NAVIGATOR AND PROGRESS */
+
+.footer{
+  width: 100%;
+  text-align: center;
+}
+.footer p{
+  line-height: 1px;
+}
+
+
+
+/* MODAL---------------------------------------------------- */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(241, 39, 39); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  padding-bottom: 30px;
+  border: 1px solid #888;
+  width: 400px; /* Could be more or less, depending on screen size */
+}
+.modal-message{
+    background: rgb(217, 214, 214);
+}
+
+/* The Close Button */
+#close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* MODAL---------------------------------------------------- */
+
+
+
+
+/*MEDIA QUERIES*/
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+ 
+}
+
+/* Small screens */
+
+@media only screen and (max-width:700px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
