@@ -50,7 +50,7 @@ class ErrorBoundary extends React.Component {
 function App() {
   useFetch();
   return(
-    <Router basename={'/survey'} > 
+    <Router basename={'/'} > 
       <Routes>
         <Route exact path={`${process.env.PUBLIC_URL}/`} element={<Welcome />} />
         <Route path={`${process.env.PUBLIC_URL}/question1`}  element={
