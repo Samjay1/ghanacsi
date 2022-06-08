@@ -60,7 +60,7 @@ const QuestionPage3 = () => {
     let q14 = ans14.value.map((ans)=> ans.value)
     if(ans14.length !== 0 ? true: false){
       let GcsiPageAnswers = {...location.state.GcsiPageAnswers, q14}
-      navigate('/question4', {state:{GcsiPageAnswers}})
+      navigate('/survey/question4', {state:{GcsiPageAnswers}})
     }else{
       setError14(true)
     }

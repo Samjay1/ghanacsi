@@ -53,7 +53,7 @@ const QuestionPage5 = () => {
   const onTapped = ()=>{
     if(ans22.length !== 0 ? true: false){
       let GcsiPageAnswers = {...location.state.GcsiPageAnswers, q22: ans22.value}
-      navigate('/question6', {state:{GcsiPageAnswers}})
+      navigate('/survey/question6', {state:{GcsiPageAnswers}})
     }else{
       setError22(true)
     }

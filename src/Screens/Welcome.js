@@ -8,7 +8,7 @@ const Welcome = () => {
   const navigate = useNavigate();
   // error handling click event
   const onTapped = ()=>{
-      navigate('/question1')
+      navigate('/survey/question1')
   }
     return ( 
         <div className="main-body">

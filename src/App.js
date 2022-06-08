@@ -52,48 +52,48 @@ function App() {
     <Router>
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route path="/" element={<Welcome />} />
-        <Route path="/index" element={<Welcome />} />
-        <Route path="/question1" element={
+        <Route path="/survey/" element={<Welcome />} />
+        <Route path="/survey/index" element={<Welcome />} />
+        <Route path="/survey/question1" element={
         <ErrorBoundary>
           <QuestionPage1 />
         </ErrorBoundary>
         } />
-        <Route path="/question2" element={
+        <Route path="/survey/question2" element={
             <ErrorBoundary>
               <QuestionPage2 />
             </ErrorBoundary>
           } />
-        <Route path="/question3" element={
+        <Route path="/survey/question3" element={
             <ErrorBoundary>
               <QuestionPage3 />
             </ErrorBoundary>
           } />
-        <Route path="/question4" element={
+        <Route path="/survey/question4" element={
             <ErrorBoundary>
               <QuestionPage4 />
             </ErrorBoundary>} />
-        <Route path="/question5" element={
+        <Route path="/survey/question5" element={
             <ErrorBoundary>
               <QuestionPage5 />
             </ErrorBoundary>} />
-        <Route path="/question6" element={
+        <Route path="/survey/question6" element={
               <ErrorBoundary>
               <QuestionPage6 />
             </ErrorBoundary>} />
-        <Route path="/question7" element={
+        <Route path="/survey/question7" element={
               <ErrorBoundary>
               <QuestionPage7 />
             </ErrorBoundary>} />
-        <Route path="/final" element={
+        <Route path="/survey/final" element={
             <ErrorBoundary>
             <ThankYou />
           </ErrorBoundary>} />
-        <Route path="/message" element={
+        <Route path="/survey/message" element={
           <ErrorBoundary>
               <Message />
           </ErrorBoundary>} />
-        {/* <Route path='/*' element={<ErrorPage/>}/> */}
+        <Route path='/survey/*' element={<ErrorPage/>}/>
 
         {/* <Route path="/test" element={<Test />} /> */}
       </Routes>

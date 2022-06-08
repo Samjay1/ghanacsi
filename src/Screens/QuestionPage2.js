@@ -288,7 +288,7 @@ class  NavigationRoute extends Component {
                             }
                             
       window.localStorage.setItem('qp2', JSON.stringify(GcsiPageAnswers))
-      this.props.navigation('/question3', {state:{GcsiPageAnswers}})
+      this.props.navigation('/survey/question3', {state:{GcsiPageAnswers}})
     }
   }
   

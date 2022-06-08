@@ -156,7 +156,7 @@ const QuestionPage4 = () => {
                               q21: ans21.value 
                             }
       console.log('GSCI :>> ', {GcsiPageAnswers});
-      navigate('/question5', {state:{GcsiPageAnswers}})
+      navigate('/survey/question5', {state:{GcsiPageAnswers}})
     }
   }
 
