@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import './App.css';
 import Welcome from './Screens/Welcome';
 import QuestionPage1 from './Screens/QuestionPage1';
@@ -49,55 +49,52 @@ class ErrorBoundary extends React.Component {
 function App() {
   useFetch();
   return(
-    <Router>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Router basename={'/survey'} > 
       <Routes>
-        <Route path="/survey/" element={<Welcome />} />
-        <Route path="/survey/index" element={<Welcome />} />
-        <Route path="/survey/question1" element={
+        <Route exact path={`${process.env.PUBLIC_URL}/`} element={<Welcome />} />
+        <Route path={`${process.env.PUBLIC_URL}/question1`}  element={
         <ErrorBoundary>
           <QuestionPage1 />
         </ErrorBoundary>
         } />
-        <Route path="/survey/question2" element={
+        <Route path={`${process.env.PUBLIC_URL}/question2`}  element={
             <ErrorBoundary>
               <QuestionPage2 />
             </ErrorBoundary>
           } />
-        <Route path="/survey/question3" element={
+        <Route path={`${process.env.PUBLIC_URL}/question3`}  element={
             <ErrorBoundary>
               <QuestionPage3 />
             </ErrorBoundary>
           } />
-        <Route path="/survey/question4" element={
+        <Route path={`${process.env.PUBLIC_URL}/question4`}  element={
             <ErrorBoundary>
               <QuestionPage4 />
             </ErrorBoundary>} />
-        <Route path="/survey/question5" element={
+        <Route path={`${process.env.PUBLIC_URL}/question5`}  element={
             <ErrorBoundary>
               <QuestionPage5 />
             </ErrorBoundary>} />
-        <Route path="/survey/question6" element={
+        <Route path={`${process.env.PUBLIC_URL}/question6`}  element={
               <ErrorBoundary>
               <QuestionPage6 />
             </ErrorBoundary>} />
-        <Route path="/survey/question7" element={
+        <Route path={`${process.env.PUBLIC_URL}/question7`} element={
               <ErrorBoundary>
               <QuestionPage7 />
             </ErrorBoundary>} />
-        <Route path="/survey/final" element={
+        <Route path={`${process.env.PUBLIC_URL}/final`}  element={
             <ErrorBoundary>
             <ThankYou />
           </ErrorBoundary>} />
-        <Route path="/survey/message" element={
+        <Route path={`${process.env.PUBLIC_URL}/message`}  element={
           <ErrorBoundary>
               <Message />
           </ErrorBoundary>} />
-        <Route path='/survey/*' element={<ErrorPage/>}/>
+        <Route path={`${process.env.PUBLIC_URL}/*`} element={<ErrorPage/>}/>
 
         {/* <Route path="/test" element={<Test />} /> */}
-      </Routes>
-    </Suspense>
+      </Routes> 
   </Router>
   );
 }

@@ -58,7 +58,8 @@ const QuestionPage1 = () => {
   // error handling click event
   const onTapped = ()=>{
     if(ans1.length !== 0 ? true: false){
-      navigate('/survey/question2', {state:{sector_id:ans1.id,sector_name: ans1.value}})
+      console.log(process.env.PUBLIC_URL)
+      navigate(process.env.PUBLIC_URL+`/question2`, {state:{sector_id:ans1.id,sector_name: ans1.value}})
     }else{
       setError1(true)
     }

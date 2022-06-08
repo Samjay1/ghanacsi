@@ -4,7 +4,7 @@ const Header  = () => {
         <>
              {/* <!-- LOGO --> */}
              <div className="text-center animate__animated animate__flipInY">
-                <img className="logo-image" src="logo.png" alt="Ghana customer service logo"/>
+                <img className="logo-image" src={process.env.PUBLIC_URL+"/logo.png"} alt="Ghana customer service logo"/>
             </div>
             {/* <!-- END LOGO --> */}
             {/* <!-- SECTOR HEAD --> */}

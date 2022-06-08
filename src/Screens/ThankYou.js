@@ -7,7 +7,7 @@ const ThankYou = () => {
         <div className="mb-5 pb-3">
              {/* <!-- LOGO --> */}
              <div className="text-center">
-                <img className="logo-image" src="logo.png" alt="Ghana customer service logo"/>
+                <img className="logo-image" src={process.env.PUBLIC_URL+"/logo.png"} alt="Ghana customer service logo"/>
             </div>
             {/* <!-- END LOGO --> */}
             {/* <!-- SECTOR HEAD --> */}
