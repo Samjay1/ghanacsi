@@ -91,7 +91,7 @@ function App() {
           <ErrorBoundary>
               <Message />
           </ErrorBoundary>} />
-        <Route path={`${process.env.PUBLIC_URL}/*`} element={<ErrorPage/>}/>
+        {/* <Route path={`${process.env.PUBLIC_URL}/*`} element={<ErrorPage/>}/> */}
 
         {/* <Route path="/test" element={<Test />} /> */}
       </Routes> 
