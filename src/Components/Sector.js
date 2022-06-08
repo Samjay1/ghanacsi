@@ -4,7 +4,7 @@ const Sector = ({sector_description,sector_title})=>{
     return(
         <>
             {/* <!-- SUB-SECTOR TITLE --> */}
-            <div className="sector mt-2">
+            <div className="sector mt-2 animate__animated animate__flipInX">
                 <div className="sector-head pl-4 d-flex ">
                     <p className={checker!==0 ? "h5 text-uppercase d-flex mt-2 text-white":  "h5 text-uppercase d-flex mt-2 text-white pt-2" }>{sector_title}</p>
                 </div>

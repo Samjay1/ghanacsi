@@ -90,10 +90,11 @@ input[type=checkbox]:before {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 0;
-  left: 0;
+  top: -2;
+  left: -2px;
   background-color:#f5fcff;
   border: 1px solid black;
+  transition: 0.5s ease;
 }
 input[type=checkbox]:checked:before {
   content: "";
@@ -102,6 +103,8 @@ input[type=checkbox]:checked:before {
   width: 20px;
   height: 20px;
   background-color:#007699;
+  top: -2px;
+  left: -2px;
   /* border: 2px solid black; */
 }
 input[type=checkbox]:checked:after {
@@ -117,6 +120,7 @@ input[type=checkbox]:checked:after {
   position: absolute;
   top: 30%;
   right: 0%;
+  
 }
 
 /*  */
@@ -126,7 +130,7 @@ input[type='radio']:after {
   height: 20px;
   border-radius: 15px;
   top: -2px;
-  left: -1px;
+  left: -2px;
   position: relative;
   background-color: #f5fcff;
   content: '';
@@ -140,7 +144,7 @@ input[type='radio']:checked:after {
   height: 20px;
   border-radius: 15px;
   top: -2px;
-  left: -1px;
+  left: -2px;
   position: relative;
   background-color: #007699;
   content: '';
@@ -233,7 +237,10 @@ mybtn:active {
 
 .showDesign{
   /* border:1px solid red; */
-  visibility: hidden;
+/* visibility: hidden; */
+  width: 50%;
+  min-width: 200px;
+  display: flex;
 }
 /* NAVIGATOR AND PROGRESS */
 

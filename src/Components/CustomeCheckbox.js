@@ -8,7 +8,7 @@ const CustomCheckbox = ({onValueChange,errorState,question,selected_company,comp
     selected_company !==null ? New_Question = Question.replace('SELECTED_COMPANY',selected_company) : New_Question= Question;
 
 
-    let [showCss, setShowCss] = useState('d-flex showDesign');
+    let [showCss, setShowCss] = useState(false);
     let [custom_answers, setCustomAnswer] = useState([]);
     let [mylist, setList] = useState([]);
     let handleOnChanged = (e)=>{
@@ -38,7 +38,6 @@ const CustomCheckbox = ({onValueChange,errorState,question,selected_company,comp
                             value={value} 
                             type="checkbox" 
                             className="mr-2"/>
-
                         <span className="ml-2">{value}</span>
                     </label>
                 </div>
@@ -70,10 +69,10 @@ const CustomCheckbox = ({onValueChange,errorState,question,selected_company,comp
     const addinput = (e)=>{
         if(e.target.checked){
             console.log('addinput checked')
-            setShowCss('d-flex ml-2');
+            setShowCss(true);
         }else{
             console.log('addinput Unchecked')
-            setShowCss('d-flex showDesign ml-2');
+            setShowCss(false);
         }
     }
 
@@ -109,7 +108,7 @@ const CustomCheckbox = ({onValueChange,errorState,question,selected_company,comp
 
                     {/* Add input */}
                     <div>
-                            <div className="answer-item d-flex justify-content-start mr-2">
+                            <div className="answer-item d-flex flex-wrap justify-content-start mr-2">
                                 <label>
                                     <input 
                                         
@@ -122,15 +121,15 @@ const CustomCheckbox = ({onValueChange,errorState,question,selected_company,comp
                                 </label>
                                 
                                 {/* input section */}
-                                <div className={showCss}>
-                                    <input onChange={textOnchange} type='text' className="form-control text-input rounded-0  border-0" value={textValue} />
+                                <div className='showDesign' style={!showCss ? {display:'none'} : null}>
+                                    <input onChange={textOnchange} type='text' className="form-control text-input mt-2 rounded-0  border-0" value={textValue} />
                                 <button onClick={addCheck} className='btn ml-1 rounded-0 primary-btn text-white'> Add</button>
                                 </div>
                             </div>
                     </div>
                 </div>
             </div>
-            {errorState && <div className="border bg-white pl-4 border-danger rounded p-1 mt-1"> <span className="icon  mr-1">!</span>
+            {errorState && <div className="border bg-white pl-4 border-danger rounded p-1 mt-1 animate__animated animate__bounce"> <span className="icon  mr-1">!</span>
            <span className="text-danger font-weight-bold">This is a required question</span>
        </div>}
             {/* <!-- QUESTION-CHECKBOX --> */}

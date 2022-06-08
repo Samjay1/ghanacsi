@@ -35,7 +35,7 @@ const RadioInline = ({onValueChange,errorState, selected_company, sector, questi
                </div>
            </div>
        </div>
-       {errorState && <div className="border bg-white pl-4 border-danger rounded p-1 mt-1"> <span className="icon  mr-1">!</span>
+       {errorState && <div className="border bg-white pl-4 border-danger rounded p-1 mt-1 animate__animated animate__bounce"> <span className="icon  mr-1">!</span>
            <span className="text-danger font-weight-bold">This is a required question</span>
        </div>}
        {/* <!-- QUESTION-RADIO-INLINE --> */}

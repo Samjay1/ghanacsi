@@ -1,4 +1,4 @@
-const Text = ({onValueChange,errorState,question,questionName,sector})=>{
+const Text = ({defaultValue,onValueChange,errorState,question,questionName,sector})=>{
     let Question = question.replace('SECTOR',sector)
 
     return(
@@ -9,7 +9,7 @@ const Text = ({onValueChange,errorState,question,questionName,sector})=>{
                 <div className="answers">
                     <div className="answer-item">
                         <label >
-                            <input name={questionName} onChange={(e)=>{onValueChange({name: e.target.name, value:e.target.value})} } type="text" className="form-control border-0 text-input rounded-0"  placeholder="Type your response"/>
+                            <input name={questionName} onChange={(e)=>{onValueChange({name: e.target.name, value:e.target.value})} } value={defaultValue} type="text" className="form-control border-0 text-input rounded-0"  placeholder="Type your response"/>
                         </label>
                     </div>
                 </div>

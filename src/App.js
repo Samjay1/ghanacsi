@@ -9,9 +9,42 @@ import QuestionPage5 from './Screens/QuestionPage5';
 import QuestionPage6 from './Screens/QuestionPage6';
 import QuestionPage7 from './Screens/QuestionPage7';
 import ThankYou from './Screens/ThankYou';
-import Test from './Screens/Test';
+import ErrorPage from './Screens/ErrorPage';
+import Message from './Screens/Message';
+// import Test from './Screens/Test';
 import useFetch from './Networks/GetData';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { error: null, errorInfo: null };
+  }
+  
+  componentDidCatch(error, errorInfo) {
+    // Catch errors in any components below and re-render with error message
+    this.setState({
+      error: error,
+      errorInfo: errorInfo
+    })
+    // You can also log error messages to an error reporting service here
+  }
+  
+  render() {
+    if (this.state.errorInfo) {
+      // Error path
+      return (
+        <div>
+          <ErrorPage/>
+        </div>
+      );
+    }
+    // Normally, just render children
+    return this.props.children;
+  }  
+}
+
 
 function App() {
   useFetch();
@@ -21,15 +54,48 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/index" element={<Welcome />} />
-        <Route path="/question1" element={<QuestionPage1 />} />
-        <Route path="/question2" element={<QuestionPage2 />} />
-        <Route path="/question3" element={<QuestionPage3 />} />
-        <Route path="/question4" element={<QuestionPage4 />} />
-        <Route path="/question5" element={<QuestionPage5 />} />
-        <Route path="/question6" element={<QuestionPage6 />} />
-        <Route path="/question7" element={<QuestionPage7 />} />
-        <Route path="/final" element={<ThankYou />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/question1" element={
+        <ErrorBoundary>
+          <QuestionPage1 />
+        </ErrorBoundary>
+        } />
+        <Route path="/question2" element={
+            <ErrorBoundary>
+              <QuestionPage2 />
+            </ErrorBoundary>
+          } />
+        <Route path="/question3" element={
+            <ErrorBoundary>
+              <QuestionPage3 />
+            </ErrorBoundary>
+          } />
+        <Route path="/question4" element={
+            <ErrorBoundary>
+              <QuestionPage4 />
+            </ErrorBoundary>} />
+        <Route path="/question5" element={
+            <ErrorBoundary>
+              <QuestionPage5 />
+            </ErrorBoundary>} />
+        <Route path="/question6" element={
+              <ErrorBoundary>
+              <QuestionPage6 />
+            </ErrorBoundary>} />
+        <Route path="/question7" element={
+              <ErrorBoundary>
+              <QuestionPage7 />
+            </ErrorBoundary>} />
+        <Route path="/final" element={
+            <ErrorBoundary>
+            <ThankYou />
+          </ErrorBoundary>} />
+        <Route path="/message" element={
+          <ErrorBoundary>
+              <Message />
+          </ErrorBoundary>} />
+        <Route path='/*' element={<ErrorPage/>}/>
+
+        {/* <Route path="/test" element={<Test />} /> */}
       </Routes>
     </Suspense>
   </Router>

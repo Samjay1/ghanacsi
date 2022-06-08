@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useGlobalState } from '../Networks/QuestionState';
 
-const QuestionPage17 = () => {
+const QuestionPage4 = () => {
   const [sample] = useGlobalState('sample');
   console.log('sample 4 :>> ', sample);
 
@@ -138,13 +138,13 @@ const QuestionPage17 = () => {
     console.log('v15 , v16 , v17 , v18 , v19 ,v20, v21:>> ', v15 , v16 , v17 , v18 , v19 ,v20, v21);
     if(v15 || v16 || v17 || v18 || v19 || v20 || v21 ){
       
-      setError15(true)
-      setError16(true) 
-      setError17(true)
-      setError18(true)
-      setError19(true)
-      setError20(true)
-      setError21(true)
+      setError15(v15)
+      setError16(v16) 
+      setError17(v17)
+      setError18(v18)
+      setError19(v19)
+      setError20(v20)
+      setError21(v21)
     }else{
       let GcsiPageAnswers = {...location.state.GcsiPageAnswers, 
                               q15: ans15.value,
@@ -173,5 +173,5 @@ const QuestionPage17 = () => {
      );
 }
  
-export default QuestionPage17;
+export default QuestionPage4;
 

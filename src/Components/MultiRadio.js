@@ -93,31 +93,33 @@ const MultiRadio = ({onValueChange,errorState,question,questionName,answers,begi
                             {end}
                         </div>
                     </div>
-                    <div className="answer-item d-flex justify-content-between p-2" style={{minWidth: '200px'}}>
+                    <div className="answer-item d-flex justify-content-between p-2" style={{minWidth: '250px'}}>
                         <div className="d-flex align-items-center   w-25">
                             
                         </div>
-                        <div className="d-flex flex-column">
-                            <span>1 </span>
-                            
-                        </div>
-                        <div className="d-flex flex-column">
-                            <span>2</span>
-                        </div>
-                        <div className="d-flex flex-column">
-                            <span>3</span>
-                        </div>
-                        <div className="d-flex flex-column">
-                            <span>4</span>
-                        </div>
-                        <div className="d-flex flex-column">
-                            <span>5</span>
-                        </div>
-                        <div className="d-flex flex-column">
-                            <span>6</span>
-                        </div>
-                        <div className="d-flex flex-column">
-                            <span>7</span>
+                        <div className='d-flex justify-content-between w-75' style={{minWidth: '100px'}}>
+                            <div className="d-flex flex-column">
+                                <span>1 </span>
+                                
+                            </div>
+                            <div className="d-flex flex-column">
+                                <span>2</span>
+                            </div>
+                            <div className="d-flex flex-column">
+                                <span>3</span>
+                            </div>
+                            <div className="d-flex flex-column">
+                                <span>4</span>
+                            </div>
+                            <div className="d-flex flex-column">
+                                <span>5</span>
+                            </div>
+                            <div className="d-flex flex-column">
+                                <span>6</span>
+                            </div>
+                            <div className="d-flex flex-column">
+                                <span>7</span>
+                            </div>
                         </div>
 
                     </div>
@@ -127,7 +129,7 @@ const MultiRadio = ({onValueChange,errorState,question,questionName,answers,begi
  
                 </div>
             </div>
-            {errorState && <div className="border bg-white pl-4 border-danger rounded p-1 mt-1"> <span className="icon  mr-1">!</span>
+            {errorState && <div className="border bg-white pl-4 border-danger rounded p-1 mt-1 animate__animated animate__bounce"> <span className="icon  mr-1">!</span>
            <span className="text-danger font-weight-bold">This is a required question</span>
        </div>}
             {/* <!-- QUESTION-MULTI-RADIO-INLINE --> */}

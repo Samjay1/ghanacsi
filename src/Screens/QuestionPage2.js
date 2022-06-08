@@ -28,10 +28,12 @@ class  NavigationRoute extends Component {
 
   constructor(){
     super();
+    let getStoredata = JSON.parse(window.localStorage.getItem('qp2'))
+    console.log('getStoredata :>> ', getStoredata);
     this.state = {
       custDropAns: null,
       multidropAns: ['1 Least important','2','3','4','5','6','7','8','9','10 Most important'],
-      error2: true,
+      error2: false,
       error3: false,
       error4: false,
       error5: false,
@@ -43,11 +45,12 @@ class  NavigationRoute extends Component {
       error11: null,
       error12: false,
       error13: null,
-      ans2: '', ans3: [], ans4: '', ans5: '', ans6: '', ans7: '', ans8: '', ans9: '', ans10: '', ans11: [], ans12: '', ans13: ''
+      ans2: '', ans3: [], ans4: '', ans5: '', ans6: '', ans7: getStoredata.q7||'', ans8: '', ans9: '', ans10: '', ans11: [], ans12: '', ans13:getStoredata.q13|| ''
     }
     this.onTapped = this.onTapped.bind(this);
     this.defaultOnTapped = this.defaultOnTapped.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    console.log('ans4 :>> ', this.state.ans4);
   }
 
    // error handling click event
@@ -283,6 +286,8 @@ class  NavigationRoute extends Component {
                             q12:this.state.ans12,
                             q13:this.state.ans13
                             }
+                            
+      window.localStorage.setItem('qp2', JSON.stringify(GcsiPageAnswers))
       this.props.navigation('/question3', {state:{GcsiPageAnswers}})
     }
   }
@@ -337,6 +342,8 @@ class  NavigationRoute extends Component {
                               }
 
             return <CustomCheckbox 
+                      defaultValue = {this.state.ans3}
+                      defaultState ={true}
                       onValueChange = {this.onTapped} 
                       errorState = {this.state.error3}
                       sector={sector_name} 
@@ -364,17 +371,18 @@ class  NavigationRoute extends Component {
 
             console.log('sector_name :>> ', sector_name);
           
-          return <Radio 
-                      onValueChange = {this.defaultOnTapped} 
-                      errorState = {this.state.error4}
-                      question={question} 
-                      questionName = {'Question4'}
-                      answers={this.state.ans3} 
-                      sameName={id}
-                      company_type = {company_types[sector_name.toUpperCase()]?company_types[sector_name.toUpperCase()]: 'company' }
-                      selected_companies={selected_companies[sector_name.toUpperCase()]?selected_companies[sector_name.toUpperCase()] : 'company'}
-                      sector={sector_name} key={4}>
-                  </Radio>
+          return  <Radio 
+          onValueChange = {this.defaultOnTapped} 
+          errorState = {this.state.error4}
+          question={question} 
+          questionName = {'Question4'}
+          answers={this.state.ans3} 
+          sameName={id}
+          company_type = {company_types[sector_name.toUpperCase()]?company_types[sector_name.toUpperCase()]: 'company' }
+          selected_companies={selected_companies[sector_name.toUpperCase()]?selected_companies[sector_name.toUpperCase()] : 'company'}
+          sector={sector_name} key={4}>
+      </Radio>
+          
         }
         else if(id===5){
           let answer_title = {'begin': 'Totally dissatisfied', 'end': 'Totally satisfied'}
@@ -407,7 +415,7 @@ class  NavigationRoute extends Component {
                       sector={sector_name} 
                       question={question} 
                       questionName = {'Question7'}
-                      answers={this.state.ans7} key={7}>
+                      defaultValue={this.state.ans7} key={7}>
                   </Text>
         }
         else if(id===8){
@@ -484,6 +492,7 @@ class  NavigationRoute extends Component {
         }
         else if(id===13){
           return <Dropdown 
+                      defaultValue={this.state.ans13}
                       onValueChange = {this.defaultOnTapped} 
                       errorState = {this.state.error13}
                       selected_company={this.state.ans4} 

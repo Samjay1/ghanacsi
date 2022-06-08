@@ -2,26 +2,23 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Sector from '../Components/Sector';
 import Radio from '../Components/Radio';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useGlobalState } from '../Networks/QuestionState';
 
 const QuestionPage1 = () => {
   const [sample] = useGlobalState('sample');
 
-  // setGlobalState("sample",sample)
+  let [ans1, setAns1] = useState({});
 
-  // fetch('https://gcsi-survey-api.herokuapp.com/')
-  // .then((response) => response.json())
-  // .then((json) => {
-  //   console.log(json)
-  //   if(json!=null) setGlobalState("sample",json)
-  //   console.log('API',json)} 
-  //   ).catch((error)=>{console.log('error :>> ', error);})
-  
+  useEffect(()=>{
+    let getStoredata = window.localStorage.getItem('ans1')
+    setAns1(JSON.parse(getStoredata));
+  },[] )
 
-
-  let [ans1, setAns1] = useState([]);
+  useEffect(()=>{
+    window.localStorage.setItem('ans1', JSON.stringify(ans1))
+  })
 
   let Page2Answers = {
     ans1
@@ -41,6 +38,7 @@ const QuestionPage1 = () => {
       let question = data.question
       let answers = data.answers
           return <Radio 
+          defaultValue={'Hospitality'}
                     onValueChange = {setAns1} 
                     errorState = {error1}
                     question={question} 

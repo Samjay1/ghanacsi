@@ -66,13 +66,13 @@ const QuestionPage3 = () => {
     }
   }
 
-  const sector_title = 'DIGITAL CHANNELS'
+  const sector_title = location.state.GcsiPageAnswers.q13
   const sector_description = 'Digital channel(s) of interaction with selected company'
   
     return ( 
         <div className="main-body">
         <Header key={'header'}></Header>
-        <Sector sector_description={sector_description} sector_title={sector_title} key={'sector'}></Sector>
+        <Sector sector_description={sector_description} sector_title={sector_title.toUpperCase()} key={'sector'}></Sector>
         {question}
         
         
