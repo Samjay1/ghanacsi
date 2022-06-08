@@ -93,7 +93,7 @@ function App() {
           <ErrorBoundary>
               <Message />
           </ErrorBoundary>} />
-        <Route path='/*' element={<ErrorPage/>}/>
+        {/* <Route path='/*' element={<ErrorPage/>}/> */}
 
         {/* <Route path="/test" element={<Test />} /> */}
       </Routes>
