@@ -24,6 +24,10 @@ const Footer  = ({onTap, button_state,title, load, page}) => {
         setShowCss('none');
     }
 
+    const onClearing= ()=>{
+        navigate(`${process.env.PUBLIC_URL}/`)
+    }
+
     return (
         <>
              <div>
@@ -64,7 +68,7 @@ const Footer  = ({onTap, button_state,title, load, page}) => {
                                     <button className="btn btn-danger" onClick={closebtn}>Cancel</button>
                                 </div>
                                 <div className="col-md text-right w-50">
-                                    <a className="btn primary-btn pl-3 pr-3" href="/">Clear</a>
+                                    <button className="btn primary-btn pl-3 pr-3" onClick={onClearing}>Clear</button>
                                 </div>
                             </div>
                         </div>

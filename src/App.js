@@ -36,8 +36,8 @@ class ErrorBoundary extends React.Component {
       // Error path
       return (
         <div>
-          {/* <ErrorPage/> */}
-          <Welcome />
+          <ErrorPage/>
+          {/* <Welcome /> */}
         </div>
       );
     }
@@ -92,7 +92,7 @@ function App() {
           <ErrorBoundary>
               <Message />
           </ErrorBoundary>} />
-        {/* <Route path={`${process.env.PUBLIC_URL}/*`} element={<ErrorPage/>}/> */}
+        <Route path={`${process.env.PUBLIC_URL}/*`} element={<ErrorPage/>}/>
 
         {/* <Route path="/test" element={<Test />} /> */}
       </Routes> 
