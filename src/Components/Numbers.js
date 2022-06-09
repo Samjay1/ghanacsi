@@ -9,7 +9,7 @@ const Numbers = ({onValueChange,errorState,question,questionName,sector})=>{
                 <div className="answers">
                     <div className="answer-item">
                         <label >
-                            <input name={questionName} onChange={(e)=>{onValueChange({name:e.target.name, value:e.target.value})} } type={'number'} max={200} step={1}  className="form-control border-0 text-input rounded-0" />
+                            <input name={questionName} onChange={(e)=>{onValueChange({name:e.target.name, value:e.target.value})} } type='number' max={200} step={1}  className="form-control border-0 text-input rounded-0" />
                         </label>
                     </div>
                 </div>

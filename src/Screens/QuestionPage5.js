@@ -51,10 +51,14 @@ const QuestionPage5 = () => {
   const navigate = useNavigate();
   // error handling click event
   const onTapped = ()=>{
-    if(ans22.length !== 0 ? true: false){
+    if(ans22.length !== 0 && ans22.value === 'Referral' ? true: false){
       let GcsiPageAnswers = {...location.state.GcsiPageAnswers, q22: ans22.value}
       navigate(`${process.env.PUBLIC_URL}/question6`, {state:{GcsiPageAnswers}})
-    }else{
+    }else if(ans22.length !== 0 && ans22.value !== 'Referral' ? true: false){
+      let GcsiPageAnswers = {...location.state.GcsiPageAnswers, q22: ans22.value}
+      navigate(`${process.env.PUBLIC_URL}/question7`, {state:{GcsiPageAnswers}})
+    }
+    else{
       setError22(true)
     }
   }

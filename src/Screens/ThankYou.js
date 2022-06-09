@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Copyrite from "../Components/Copyrite";
 
 const ThankYou = () => {
