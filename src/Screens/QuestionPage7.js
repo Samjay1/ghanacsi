@@ -117,12 +117,12 @@ const QuestionPage7 = () => {
       if(ans24.value ==="No"){
         // console.log('POSTING DATA TO SERVER:',GcsiPageAnswers)
         console.log('POSTING DATA TO SERVER: ', data);
-        postRequest(data, '/survey/final')
+        postRequest(data,`${process.env.PUBLIC_URL}/final`)
 
       }else{
         // console.log('POSTING DATA TO SERVER:',GcsiPageAnswers)
         // console.log(' OPT TO RETAKE:')
-        postRequest(data, '/survey/')
+        postRequest(data, `${process.env.PUBLIC_URL}/`)
       }
     }else{
       setError24(true)
@@ -145,13 +145,13 @@ const QuestionPage7 = () => {
         console.log('data.age[0]  :>> ', data.age[0] );
         if(data.age[0] ===  "This field is required."){
           console.log('went wrong')
-          navigate('/survey/message')
+          navigate(`${process.env.PUBLIC_URL}/message`)
         }else{
            navigate(route)
         }
       }).catch((error)=>{
         console.log('Error Api:>> ', error);
-        navigate('/survey/message')
+        navigate(`${process.env.PUBLIC_URL}/message`)
         
       });
   }

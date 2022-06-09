@@ -8,7 +8,7 @@ const Welcome = () => {
   const navigate = useNavigate();
   // error handling click event
   const onTapped = ()=>{
-      navigate('/survey/question1')
+      navigate(process.env.PUBLIC_URL+'/question1')
   }
     return ( 
         <div className="main-body">

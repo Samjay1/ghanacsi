@@ -45,7 +45,7 @@ class  NavigationRoute extends Component {
       error11: null,
       error12: false,
       error13: null,
-      ans2: '', ans3: [], ans4: '', ans5: '', ans6: '', ans7: getStoredata.q7||'', ans8: '', ans9: '', ans10: '', ans11: [], ans12: '', ans13:getStoredata.q13|| ''
+      ans2: '', ans3: [], ans4: '', ans5: '', ans6: '', ans7: '', ans8: '', ans9: '', ans10: '', ans11: [], ans12: '', ans13:''
     }
     this.onTapped = this.onTapped.bind(this);
     this.defaultOnTapped = this.defaultOnTapped.bind(this);
