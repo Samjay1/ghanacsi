@@ -83,18 +83,18 @@ const CustomRadio = ({onValueChange,errorState,question,questionName, answers, s
                      {/* Add input */}
                     <div>
                             <div className="answer-item d-flex flex-wrap justify-content-start mr-2">
-                                <label className="d-flex">
+                                <label className="d-flex " style={{height:"25px", marginLeft:'-5px'}}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 icon-small text-success" fill="none" viewBox="0 0 24 24" stroke={!checkstate ? "#007699": "black"} strokeWidth="2">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                                     <span  
-                                    style={!checkstate ? {color:"#007699", fontWeight: 'bold'}: {color:"black"}}
+                                    style={!checkstate ? {color:"#007699", fontWeight: 'normal',}: {color:"black"}}
                                         onClick={ addinput } 
                                         className="mt-1 ml-2">Others</span>
                                 </label>
                                 
                                 {/* input section */}
-                                <div className='showDesign' style={showCss ? {display:'none'} : null}>
+                                <div className='showDesign ' style={showCss ? {display:'none'} : null}>
                                     <input onChange={textOnchange} type='text' className="form-control text-input rounded-0  border-0" value={textValue} />
                                 <button onClick={addRadio} className='btn ml-1 rounded-0 primary-btn text-white'> Add</button>
                                 </div>
