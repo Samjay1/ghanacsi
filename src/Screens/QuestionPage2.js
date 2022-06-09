@@ -518,12 +518,14 @@ class  NavigationRoute extends Component {
     {name: 'Online Businesses', value: 'This section surveys popular e-commerce businesses in Ghana'},
     {name: 'Transportation', value: 'This section surveys ride hailing transport services in Ghana '},
     {name: 'Insurance', value: 'This section surveys insurance companies regulated by the National Insurance Commission'},
-    {name: 'Petroleum', value: 'This section surveys the Petroleum Sector'}
+    {name: 'Oil Marketing Companies', value: 'This section surveys the Oil Marketing Companies Sector'},
+    {name: 'Oil Marketing', value: 'This section surveys the Oil Marketing Companies Sector'}
   ]
   
   
     const sector_title = sector_name+' SECTOR'
     const sector_description = sectorDes.filter((item)=> item.name === sector_name)
+    console.log('SECTOR SECTION---------------', sector_name, sector_description)
       return ( 
           <div className="main-body">
           <Header key={'header'}></Header>
