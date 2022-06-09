@@ -23,9 +23,9 @@ const ThankYou = () => {
                     </div>
                 </div>
                 <div className="mt-3">
-                <Link  to='/' className="mybtn bg-white rounded p-2 pl-3 pr-3 mr-2 ">
+                <a  href="https://ghanacsi.org/" className="mybtn bg-white rounded p-2 pl-3 pr-3 mr-2 ">
                    Back to Homepage
-                </Link>
+                </a>
                 </div>
             </div>
             {/* <!-- END SECTOR HEAD --> */}
