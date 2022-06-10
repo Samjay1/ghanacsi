@@ -96,7 +96,7 @@ const sample =
             },
             {
                 "id": 11,
-                "answer": "Petroleum",
+                "answer": "Oil Marketing Companies",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": null,

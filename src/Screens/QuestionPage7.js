@@ -11,9 +11,10 @@ const QuestionPage7 = () => {
   console.log('sample 7 :>> ', sample);
  let sector_list =  { "Banking": 1, "Utilities": 2, "Telecommunications": 3, "Hospitality": 4,
                       "Healthcare": 5,"Retail Malls": 6, "Public Institutions": 7, "Online Businesses": 8,
-                      "Transportation": 9,  "Insurance": 10, "Petroleum": 11
+                      "Transportation": 9,  "Insurance": 10, "Oil Marketing Companies": 11
                     }
 
+  let [isLoading, setIsLoading] = useState(false);
 
   let location = useLocation();
 
@@ -113,6 +114,8 @@ const QuestionPage7 = () => {
         "covid_focus": q11,
         "covid_feel": GcsiPageAnswers.q12
     }
+    setIsLoading(true)
+    isLoading = true
     console.log('data to post :>> ', data);
       if(ans24.value ==="No"){
         // console.log('POSTING DATA TO SERVER:',GcsiPageAnswers)
@@ -142,11 +145,19 @@ const QuestionPage7 = () => {
       .then(response => response.json())
       .then(data => {
         console.log('API POST',data)
+        setIsLoading(true)
+        isLoading = false
+        console.log('isLoading',isLoading)
         console.log('data.age[0]  :>> ', data.age[0] );
         if(data.age[0] ===  "This field is required."){
           console.log('went wrong')
+          setIsLoading(false)
+          console.log(isLoading)
           navigate(`${process.env.PUBLIC_URL}/message`)
         }else{
+          console.log('isLoading',isLoading)
+          setIsLoading(false)
+          console.log(isLoading)
            navigate(route)
         }
       }).catch((error)=>{
@@ -161,11 +172,16 @@ const QuestionPage7 = () => {
     return ( 
         <div className="main-body">
         <Header key={'header'}></Header>
-        <Sector sector_description={sector_description} sector_title={sector_title} key={'sector'}></Sector>
-        {question}
+        {!isLoading&& <Sector sector_description={sector_description} sector_title={sector_title} key={'sector'}></Sector>}
+        {!isLoading&& question}
         
         
+        {isLoading && <div className='text-center bg-white m-2 p-4 rounded'>
+            <p className='display-3 primary-text'>Submitting...</p>
+          </div>}
+
         <Footer key={'footer'} title={ans24.value==="Yes" ? 'Another Survey' : 'Submit'} onTap={onTapped}  button_state='true' load={'100%'} page={8}></Footer>
+       
       </div>
      );
 }

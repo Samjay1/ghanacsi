@@ -1,6 +1,14 @@
+
+import { useNavigate } from "react-router-dom";
 import Copyrite from "../Components/Copyrite";
 
 const ThankYou = () => {
+
+    let navigate = useNavigate()
+    const onClearing= ()=>{
+        navigate(`${process.env.PUBLIC_URL}/`)
+    }
+
     return ( 
         <div className="main-body d-flex flex-column min-vh-100">
         <div className="mb-5 pb-3">
@@ -22,9 +30,9 @@ const ThankYou = () => {
                     </div>
                 </div>
                 <div className="mt-3">
-                <a  href="https://ghanacsi.org/" className="mybtn bg-white rounded p-2 pl-3 pr-3 mr-2 ">
+                <button  onClick={onClearing} className="mybtn bg-white rounded p-2 pl-3 pr-3 mr-2 ">
                    Back to Homepage
-                </a>
+                </button>
                 </div>
             </div>
             {/* <!-- END SECTOR HEAD --> */}
