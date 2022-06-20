@@ -119,6 +119,7 @@ const QuestionPage7 = () => {
     console.log('data to post :>> ', data);
       if(ans24.value ==="No"){
         // console.log('POSTING DATA TO SERVER:',GcsiPageAnswers)
+        console.log('7. GcsiPageAnswers',GcsiPageAnswers) 
         console.log('POSTING DATA TO SERVER: ', data);
         postRequest(data,`${process.env.PUBLIC_URL}/final`)
 

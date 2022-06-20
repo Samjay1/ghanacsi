@@ -12,7 +12,7 @@ const Checkbox = ({onValueChange,errorState,question,selected_company, answers,s
         if(e.target.checked){
             mylist.push({name: e.target.name, value: e.target.value})
             onValueChange({name:questionName, value:mylist})
-            console.log(e.target.value) 
+            // console.log(e.target.value) 
         }else if(e.target.checked === false){ 
             let finalList = mylist.filter((item)=> item.value!==e.target.value) || mylist;
             setList(finalList)

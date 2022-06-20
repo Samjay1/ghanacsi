@@ -2,7 +2,7 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Sector from '../Components/Sector';
 import Radio from '../Components/Radio';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useGlobalState } from '../Networks/QuestionState';
 
@@ -11,19 +11,10 @@ const QuestionPage1 = () => {
 
   let [ans1, setAns1] = useState({});
 
-  useEffect(()=>{
-    let getStoredata = window.localStorage.getItem('ans1')
-    setAns1(JSON.parse(getStoredata));
-  },[] )
-
-  useEffect(()=>{
-    window.localStorage.setItem('ans1', JSON.stringify(ans1))
-  })
-
-  let Page2Answers = {
-    ans1
-  }
-  console.log('Question Page1',Page2Answers)
+  // let Page2Answers = {
+  //   ans1
+  // }
+  // console.log('Question Page1',Page2Answers)
   // console.log('sample :>> ', sample);
                       
   // Error states for each question: false - no error and true - error present

@@ -7,10 +7,10 @@ const MultiRadio = ({onValueChange,errorState,question,questionName,answers,begi
 
     let handleOnChanged = (e, index)=>{
         let keyValueObj = {name: e.target.name, value: e.target.value}
-        console.log(keyValueObj)
+        // console.log(keyValueObj)
         mylist[index] = keyValueObj
         onValueChange({name:questionName, value:mylist})
-        console.log(mylist)
+        // console.log(mylist)
     }
 
     const answerList = answers.map((answer,index)=> {

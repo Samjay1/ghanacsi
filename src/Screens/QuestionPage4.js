@@ -10,7 +10,7 @@ import { useGlobalState } from '../Networks/QuestionState';
 
 const QuestionPage4 = () => {
   const [sample] = useGlobalState('sample');
-  console.log('sample 4 :>> ', sample);
+  // console.log('sample 4 :>> ', sample);
 
   let location = useLocation();
 
@@ -22,10 +22,10 @@ const QuestionPage4 = () => {
   let [ans20, setAns20]= useState('');
   let [ans21, setAns21]= useState('');
   
-  let Page4Answers = {
-    ans15,ans16,ans17,ans18,ans19,ans20,ans21
-  }
-  console.log('QuestionPage 4',Page4Answers)
+  // let Page4Answers = {
+  //   ans15,ans16,ans17,ans18,ans19,ans20,ans21
+  // }
+  // console.log('QuestionPage 4',Page4Answers)
   // console.log('GcsiPageAnswers',location.state.GcsiPageAnswers)
                       
   // Error states for each question: false - no error and true - error present
@@ -155,7 +155,7 @@ const QuestionPage4 = () => {
                               q20: ans20.value,
                               q21: ans21.value 
                             }
-      console.log('GSCI :>> ', {GcsiPageAnswers});
+      console.log('4. GcsiPageAnswers',GcsiPageAnswers) 
       navigate(`${process.env.PUBLIC_URL}/question5`, {state:{GcsiPageAnswers}})
     }
   }

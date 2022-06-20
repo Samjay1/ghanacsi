@@ -14,10 +14,10 @@ const QuestionPage6 = () => {
 
   let [ans23, setAns23] = useState([]);
 
-  let Page2Answers = {
-    ans23
-  }
-  console.log('Question Page6',Page2Answers)
+  // let Page2Answers = {
+  //   ans23
+  // }
+  // console.log('Question Page6',Page2Answers)
   // console.log('GcsiPageAnswers',location.state.GcsiPageAnswers)
                       
   // Error states for each question: false - no error and true - error present
@@ -51,6 +51,8 @@ const QuestionPage6 = () => {
   const onTapped = ()=>{
     if(ans23.length !== 0 ? true: false){
       let GcsiPageAnswers = {...location.state.GcsiPageAnswers, q23: ans23.value}
+
+      console.log('6. GcsiPageAnswers',GcsiPageAnswers) 
       navigate(`${process.env.PUBLIC_URL}/question7`, {state:{GcsiPageAnswers}})
     }else{
       setError23(true)

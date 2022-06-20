@@ -14,10 +14,10 @@ const QuestionPage5 = () => {
 
   let [ans22, setAns22] = useState([]);
 
-  let Page2Answers = {
-    ans22
-  }
-  console.log('Question Page5',Page2Answers)
+  // let Page2Answers = {
+  //   ans22
+  // }
+  // console.log('Question Page5',Page2Answers)
   // console.log('GcsiPageAnswers',location.state.GcsiPageAnswers)
                       
   // Error states for each question: false - no error and true - error present
@@ -56,6 +56,8 @@ const QuestionPage5 = () => {
       navigate(`${process.env.PUBLIC_URL}/question6`, {state:{GcsiPageAnswers}})
     }else if(ans22.length !== 0 && ans22.value !== 'Referral' ? true: false){
       let GcsiPageAnswers = {...location.state.GcsiPageAnswers, q22: ans22.value}
+
+      console.log('5. GcsiPageAnswers',GcsiPageAnswers) 
       navigate(`${process.env.PUBLIC_URL}/question7`, {state:{GcsiPageAnswers}})
     }
     else{

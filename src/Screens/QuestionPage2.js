@@ -17,7 +17,7 @@ function QuestionPage2 (){
   const navigator = useNavigate();
   const location = useLocation();
   const [sample] = useGlobalState('sample');
-  console.log('sample 2 :>> ', sample);
+  // console.log('sample 2 :>> ', sample);
 
   return <NavigationRoute navigation={navigator} sector_id={location.state.sector_id} sector_name={location.state.sector_name}  sample={sample}></NavigationRoute>
 }
@@ -28,8 +28,7 @@ class  NavigationRoute extends Component {
 
   constructor(){
     super();
-    let getStoredata = JSON.parse(window.localStorage.getItem('qp2'))
-    console.log('getStoredata :>> ', getStoredata);
+    
     this.state = {
       custDropAns: null,
       multidropAns: ['1 Least important','2','3','4','5','6','7','8','9','10 Most important'],
@@ -49,33 +48,32 @@ class  NavigationRoute extends Component {
     }
     this.onTapped = this.onTapped.bind(this);
     this.defaultOnTapped = this.defaultOnTapped.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
-    console.log('ans4 :>> ', this.state.ans4);
+    this.onSubmit = this.onSubmit.bind(this); 
   }
 
    // error handling click event
     defaultOnTapped = (obj)=>{
-            console.log('obj', obj);
+            // console.log('obj', obj);
       if(obj.name ==="Question2"){
         this.setState({
           ans2 : obj.value,
-          error2: obj.value !== '' ? false : true
+          error2: obj.value.length !== 0 ? false : true
         })
-         // console.log('Question2 ans', this.state.error3, this.state.ans2);
+        //  console.log('Question2 ans', this.state.error3, this.state.ans2);
       }
       else if(obj.name ==="Question3"){
         this.setState({
           ans3 : obj.value,
           error3: obj.value !== '' ? false : true
         })
-         // console.log('Question2 ans', this.state.error3, this.state.ans2);
+        //  console.log('Question2 ans', this.state.error3, this.state.ans3);
       }
       else if(obj.name ==="Question4"){
         this.setState({
           ans4 : obj.value,
           error4: obj.value !== '' ? false : true
         })
-         // console.log('Question2 ans', this.state.error3, this.state.ans2);
+        //  console.log('Question2 ans', this.state.error3, this.state.ans4);
       }
       else if(obj.name ==="Question5"){
         let answerList = obj.value
@@ -88,37 +86,11 @@ class  NavigationRoute extends Component {
       else if(obj.name ==="Question6"){
         let answerList = obj.value
         let checkedAnswers = answerList.filter((item)=> item.name !=null)
-
-
-
-
-        console.log('SELECTED ans :>> ', checkedAnswers);
-        // console.log('ALL LIST :>> ', this.state.multidropAns);
-        // console.log('not SELECTED ans :>> ', this.state.custDropAns);
-        // this.setState({
-        //   custDropAns : [2,3,4],
-        //   multidropAns: [1,2,3,4]
-        // })
-        // console.log('UDATED AGAIN :>> ', this.state.multidropAns);
-        // console.log('Again not SELECTED ans :>> ', this.state.custDropAns);
+   
         
         this.setState({ 
           multidropAns: checkedAnswers
-        })
-        // let newlist ;
-        // checkedAnswers.map((checkedItem)=>{
-        //   console.log('checkedItem :>> ', checkedItem);
-        //   newlist = this.state.multidropAns.filter((item)=> item!== checkedItem.value)
-        //   console.log('newMultiAns :>> ', newlist);
-        //   this.setState({ 
-        //     multidropAns: newlist
-        //   })
-        // })
-        
-        // // console.log('answerList :>> ', answerList);
-        // console.log('Outside newlist :>> ', newlist);
-        
-        
+        }) 
 
         this.setState({
           ans6 : obj.value,
@@ -181,7 +153,7 @@ class  NavigationRoute extends Component {
       //  console.log('Question3 ans', this.state.error3);
     }
     else if(obj.name === "Question11"){
-      console.log('Question11 ans', obj.value);
+      // console.log('Question11 ans', obj.value);
       this.setState({
         ans11 : obj.value,
         error11: obj.value.length !== 0 ? false : true
@@ -217,7 +189,7 @@ class  NavigationRoute extends Component {
 
     })
 
-    if(this.state.error2 || this.state.error3 || this.state.error4 || this.state.error5 || this.state.error6 || this.state.error7 ||  this.state.error8 || this.state.error9 || this.state.error10 || this.state.error11 || this.state.error12 ||  this.state.error13){
+    if(this.state.ans2.length === 0 || this.state.error3 || this.state.error4 || this.state.error5 || this.state.error6 || this.state.error7 ||  this.state.error8 || this.state.error9 || this.state.error10 || this.state.error11 || this.state.error12 ||  this.state.error13){
       // console.log('SUBMIT::ERROR FOUND XXX');
       // console.log('ERRORS  :>> ', this.state.error2, this.state.error3 , this.state.error4 , this.state.error5 , this.state.error6 , this.state.error7 ,  this.state.error8 ,this.state.error9 , this.state.error10, this.state.error11,this.state.error12 ,  this.state.error13 );
       let answerList = this.state.ans5 || new Array(10)
@@ -245,7 +217,8 @@ class  NavigationRoute extends Component {
     } else{
       // console.log('SUBMIT::NO ERROR');
       // console.log('ERRORS  :>> ', this.state.error2, this.state.error3 , this.state.error4 , this.state.error5 , this.state.error6 , this.state.error7 ,  this.state.error8 ,this.state.error9 , this.state.error10, this.state.error11,this.state.error12 ,  this.state.error13 );
-      // console.log('this.state.ans6.length  :>> ', this.state.ans6.length );
+      // console.log('this.state.ans2.length === 0  :>> ', this.state.ans2.length === 0 );
+      // console.log('this.state.ans2 :>> ', this.state.ans2 );
 
       let answerList = this.state.ans5 || new Array(10)
       let checkedAnswers = answerList.filter((item)=> item.name !=null)
@@ -269,7 +242,7 @@ class  NavigationRoute extends Component {
     })
 
     // SEND ANSWERS TO THE NEXT PAGE
-      console.log('1. GcsiPageAnswers',this.props.sector_name)
+    
       
       let GcsiPageAnswers = {
                             q1:this.props.sector_name,
@@ -286,8 +259,8 @@ class  NavigationRoute extends Component {
                             q12:this.state.ans12,
                             q13:this.state.ans13
                             }
-                            
-      window.localStorage.setItem('qp2', JSON.stringify(GcsiPageAnswers))
+
+      console.log('2. GcsiPageAnswers',GcsiPageAnswers) 
       this.props.navigation(process.env.PUBLIC_URL+'/question3', {state:{GcsiPageAnswers}})
     }
   }
@@ -368,8 +341,6 @@ class  NavigationRoute extends Component {
               'BANKING':'bank',
               'TELECOMMUNICATIONS':'network'
                                 }
-
-            console.log('sector_name :>> ', sector_name);
           
           return  <Radio 
           onValueChange = {this.defaultOnTapped} 
@@ -525,7 +496,7 @@ class  NavigationRoute extends Component {
   
     const sector_title = sector_name+' SECTOR'
     const sector_description = sectorDes.filter((item)=> item.name === sector_name)
-    console.log('SECTOR SECTION---------------', sector_name, sector_description)
+    // console.log('SECTOR SECTION---------------', sector_name)
       return ( 
           <div className="main-body">
           <Header key={'header'}></Header>

@@ -12,11 +12,11 @@ const CustomCheckbox = ({onValueChange,errorState,question,selected_company,comp
     let [custom_answers, setCustomAnswer] = useState([]);
     let [mylist, setList] = useState([]);
     let handleOnChanged = (e)=>{
-        console.log('answers :>> ', answers);
+        // console.log('answers :>> ', answers);
         if(e.target.checked){
             mylist.push({name: e.target.name, value: e.target.value})
             onValueChange({name:questionName, value:mylist})
-            console.log(e.target.value) 
+            // console.log(e.target.value) 
 
         }else if(e.target.checked === false){ 
             let finalList = mylist.filter((item)=> item.value!==e.target.value) || mylist;
