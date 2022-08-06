@@ -3,7 +3,7 @@ import Footer from '../Components/Footer';
 import Sector from '../Components/Sector';
 import { useState } from 'react';
 import { useNavigate, useLocation  } from "react-router-dom";
-import CustomRadio from '../Components/CustomRadio';
+import Radio from '../Components/Radio';
 import { useGlobalState } from '../Networks/QuestionState';
 
 const QuestionPage6 = () => {
@@ -32,14 +32,14 @@ const QuestionPage6 = () => {
     if(id===23){
       let question = data.question
       let answers = data.answers
-          return <CustomRadio 
+          return <Radio 
                     onValueChange = {setAns23} 
                     errorState = {error23}
                     question={question} 
                     answers={answers} 
                     sameName={id}
                     key={id}>
-                </CustomRadio>
+                </Radio>
     }else{
       // console.log('data else:>> NAN');
       return null;
