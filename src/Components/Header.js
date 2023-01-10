@@ -1,5 +1,7 @@
 import './logo.png';
 const Header  = () => {
+    var year = new Date().getFullYear();
+    console.log('year :>> ', year);
     return (
         <>
              {/* <!-- LOGO --> */}
@@ -10,10 +12,11 @@ const Header  = () => {
             {/* <!-- SECTOR HEAD --> */}
             <div className="main-body-head animate__animated animate__flipInX">
                 <div className="sector-body pl-4 bg-white pt-4 pb-2">
-                    <h2>GHANA CUSTOMER SERVICE INDEX SURVEY 2022</h2>
+                    <h2>GHANA CUSTOMER SERVICE INDEX SURVEY {year} </h2>
                 <p>Multi-sector Survey on Customer Service Experience in Ghana</p>
                 </div>
             </div>
+           
             {/* <!-- END SECTOR HEAD --> */}
         </>
       );
