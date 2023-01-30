@@ -7,13 +7,13 @@ const Message = ()=>{
         <div className="mb-5 pb-3">
              {/* <!-- LOGO --> */}
              <div className="text-center">
-                <img className="logo-image" src="logo.png" alt="Ghana customer service logo"/>
+                <img className="logo-image" src="logo.png" alt="Nigeria customer service logo"/>
             </div>
             {/* <!-- END LOGO --> */}
             {/* <!-- SECTOR HEAD --> */}
             <div className="main-body-head">
                 <div className="sector-body pl-4 bg-white pt-4 pb-2 text-center">
-                    <h4>GHANA CUSTOMER SERVICE INDEX SURVEY 2022</h4>
+                    <h4>NIGERIA CUSTOMER SERVICE INDEX SURVEY 2022</h4>
                     <div className='mt-4 pt-4 border-top text-success'>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 icon-svg " fill="red" viewBox="0 0 24 24" stroke="#bf0000" strokeWidth="2">
@@ -24,13 +24,14 @@ const Message = ()=>{
                         <p className='text-secondary text-center mr-3'>Click the button below to start the survey</p>
                     </div>
                 </div>
-                <div className="mt-3">
+                
+            </div>
+            {/* <!-- END SECTOR HEAD --> */}
+            <div className="mt-3">
                 <Link  to='/' className="mybtn bg-white rounded p-2 pl-3 pr-3 mr-2 ">
                    Go to Survey
                 </Link>
                 </div>
-            </div>
-            {/* <!-- END SECTOR HEAD --> */}
         </div>  
 
         <Copyrite></Copyrite>

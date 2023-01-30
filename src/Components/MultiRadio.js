@@ -80,7 +80,7 @@ const MultiRadio = ({onValueChange,errorState,question,questionName,answers,begi
     return(
         <>
               {/* <!-- QUESTION-MULTI-RADIO-INLINE --> */}
-              <div className="question-body p-4 mt-2"  style={ errorState ? {border:"1px solid red"} : {border: "1px solid #d2d4d4"}} >
+              <div className="question-body p-4 mt-2"  style={ errorState ? {border:"1px solid red"} : {borderLeft: "2px solid #007699"}} >
                 <p>{Question} MULTIPLE RESPONSE <span className="text-danger">*</span></p>
                 <div className="answers">
                     <div className="d-flex justify-content-between">

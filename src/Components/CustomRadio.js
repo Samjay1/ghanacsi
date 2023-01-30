@@ -72,7 +72,7 @@ const CustomRadio = ({onValueChange,errorState,question,questionName, answers, s
     return(
         <>
              {/* <!-- QUESTION-RADIO --> */}
-            <div className="question-body p-4 mt-2"  style={ errorState ? {border:"1px solid red"} : {border: "1px solid #d2d4d4"}} >
+            <div className="question-body p-4 mt-2"  style={ errorState ? {border:"1px solid red"} : {borderLeft: "2px solid #007699"}} >
                 <p>{Question} SINGLE RESPONSE <span className="text-danger">*</span> </p>
                 <div className="answers">
 

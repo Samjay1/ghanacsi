@@ -3,7 +3,7 @@ import { setGlobalState } from '../Networks/QuestionState';
 
 let setData ;
 const useFetch = ()=>{
-    fetch('https://api.ghanacsi.org')
+    fetch('https://api.Nigeriacsi.org')
     .then((response) => response.json())
     .then((json) => {
         setData=json

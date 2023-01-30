@@ -437,7 +437,7 @@ class  NavigationRoute extends Component {
   
   
     const sector_title = sector_name+' SECTOR'
-    const sector_description = 'This section surveys banks licensed by the Bank of Ghana'
+    const sector_description = 'This section surveys banks licensed by the Bank of Nigeria'
       return ( 
           <div className="main-body">
           <Header key={'header'}></Header>

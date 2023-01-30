@@ -175,7 +175,7 @@ const sample =
                 "question": 2
             }
         ],
-        "question": "Overall, how satisfied or dissatisfied are you with customer service in the BANKING_SECTOR in Ghana?",
+        "question": "Overall, how satisfied or dissatisfied are you with customer service in the BANKING_SECTOR in Nigeria?",
         "response_type": "RadioInline"
     },
     {
@@ -183,7 +183,7 @@ const sample =
         "answers": [
             {
                 "id": 19,
-                "answer": "Absa Bank Ghana Limited",
+                "answer": "Absa Bank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -192,7 +192,7 @@ const sample =
             },
             {
                 "id": 20,
-                "answer": "Access Bank (Ghana) Plc",
+                "answer": "Access Bank (Nigeria) Plc",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -210,7 +210,7 @@ const sample =
             },
             {
                 "id": 22,
-                "answer": "Bank of Africa Ghana Limited",
+                "answer": "Bank of Africa Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -228,7 +228,7 @@ const sample =
             },
             {
                 "id": 24,
-                "answer": "Consolidated Bank Ghana Limited",
+                "answer": "Consolidated Bank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -237,7 +237,7 @@ const sample =
             },
             {
                 "id": 25,
-                "answer": "Ecobank Ghana Limited",
+                "answer": "Ecobank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -246,7 +246,7 @@ const sample =
             },
             {
                 "id": 26,
-                "answer": "FBNBank (Ghana) Limited",
+                "answer": "FBNBank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -255,7 +255,7 @@ const sample =
             },
             {
                 "id": 27,
-                "answer": "Fidelity Bank Ghana Limited",
+                "answer": "Fidelity Bank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -273,7 +273,7 @@ const sample =
             },
             {
                 "id": 29,
-                "answer": "First National Bank (Ghana) Limited",
+                "answer": "First National Bank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -300,7 +300,7 @@ const sample =
             },
             {
                 "id": 32,
-                "answer": "Guaranty Trust Bank (Ghana) Limited",
+                "answer": "Guaranty Trust Bank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -318,7 +318,7 @@ const sample =
             },
             {
                 "id": 34,
-                "answer": "OmniBSIC Bank Ghana Limited",
+                "answer": "OmniBSIC Bank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -336,7 +336,7 @@ const sample =
             },
             {
                 "id": 36,
-                "answer": "Republic Bank (Ghana) Limited",
+                "answer": "Republic Bank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -345,7 +345,7 @@ const sample =
             },
             {
                 "id": 37,
-                "answer": "Societe General (Ghana) Limited",
+                "answer": "Societe General (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -354,7 +354,7 @@ const sample =
             },
             {
                 "id": 38,
-                "answer": "Stanbic Bank Ghana Limited",
+                "answer": "Stanbic Bank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -363,7 +363,7 @@ const sample =
             },
             {
                 "id": 39,
-                "answer": "Standard Chartered Bank (Ghana) Limited",
+                "answer": "Standard Chartered Bank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -372,7 +372,7 @@ const sample =
             },
             {
                 "id": 40,
-                "answer": "United Bank for Africa (Ghana) Limited",
+                "answer": "United Bank for Africa (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -390,7 +390,7 @@ const sample =
             },
             {
                 "id": 42,
-                "answer": "Zenith Bank (Ghana) Limited",
+                "answer": "Zenith Bank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -399,7 +399,7 @@ const sample =
             },
             {
                 "id": 43,
-                "answer": "Electricity Company of Ghana",
+                "answer": "Electricity Company of Nigeria",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 2,
@@ -408,7 +408,7 @@ const sample =
             },
             {
                 "id": 44,
-                "answer": "Ghana Water Company",
+                "answer": "Nigeria Water Company",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 2,
@@ -417,7 +417,7 @@ const sample =
             },
             {
                 "id": 45,
-                "answer": "Zoomlion Ghana Limited",
+                "answer": "Zoomlion Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 2,
@@ -858,7 +858,7 @@ const sample =
             },
             {
                 "id": 94,
-                "answer": "University of Ghana Medical Center (UGMC)",
+                "answer": "University of Nigeria Medical Center (UGMC)",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 5,
@@ -1029,7 +1029,7 @@ const sample =
             },
             {
                 "id": 113,
-                "answer": "Ghana Broadcasting Corporation",
+                "answer": "Nigeria Broadcasting Corporation",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 7,
@@ -1038,7 +1038,7 @@ const sample =
             },
             {
                 "id": 114,
-                "answer": "Ghana Civil Aviation Authority",
+                "answer": "Nigeria Civil Aviation Authority",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 7,
@@ -1047,7 +1047,7 @@ const sample =
             },
             {
                 "id": 115,
-                "answer": "Ghana Free Zones Board",
+                "answer": "Nigeria Free Zones Board",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 7,
@@ -1056,7 +1056,7 @@ const sample =
             },
             {
                 "id": 116,
-                "answer": "Ghana Investment Promotion Centre",
+                "answer": "Nigeria Investment Promotion Centre",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 7,
@@ -1065,7 +1065,7 @@ const sample =
             },
             {
                 "id": 117,
-                "answer": "Ghana Police Service",
+                "answer": "Nigeria Police Service",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 7,
@@ -1074,7 +1074,7 @@ const sample =
             },
             {
                 "id": 118,
-                "answer": "Ghana Revenue Authority",
+                "answer": "Nigeria Revenue Authority",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 7,
@@ -1083,7 +1083,7 @@ const sample =
             },
             {
                 "id": 119,
-                "answer": "Ghana Shippers Authority",
+                "answer": "Nigeria Shippers Authority",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 7,
@@ -1092,7 +1092,7 @@ const sample =
             },
             {
                 "id": 120,
-                "answer": "Ghana Standards Authority",
+                "answer": "Nigeria Standards Authority",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 7,
@@ -1191,7 +1191,7 @@ const sample =
             },
             {
                 "id": 131,
-                "answer": "Melcome Ghana Online Shopping",
+                "answer": "Melcome Nigeria Online Shopping",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 8,
@@ -1290,7 +1290,7 @@ const sample =
             },
             {
                 "id": 142,
-                "answer": "Activa International Insurance Company-Ghana Limited",
+                "answer": "Activa International Insurance Company-Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 10,
@@ -1335,7 +1335,7 @@ const sample =
             },
             {
                 "id": 147,
-                "answer": "Ghana Life Insurance Company",
+                "answer": "Nigeria Life Insurance Company",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 10,
@@ -1344,7 +1344,7 @@ const sample =
             },
             {
                 "id": 148,
-                "answer": "Ghana Life Insurance Company",
+                "answer": "Nigeria Life Insurance Company",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 10,
@@ -1362,7 +1362,7 @@ const sample =
             },
             {
                 "id": 150,
-                "answer": "Hollard Insurance Ghana Limited",
+                "answer": "Hollard Insurance Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 10,
@@ -1389,7 +1389,7 @@ const sample =
             },
             {
                 "id": 153,
-                "answer": "Metropolitan Life Insurance Ghana Limited",
+                "answer": "Metropolitan Life Insurance Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 10,
@@ -1416,7 +1416,7 @@ const sample =
             },
             {
                 "id": 156,
-                "answer": "Prudential Life Insurance Ghana",
+                "answer": "Prudential Life Insurance Nigeria",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 10,
@@ -1425,7 +1425,7 @@ const sample =
             },
             {
                 "id": 157,
-                "answer": "Regency Nem Insurance Ghana Limited",
+                "answer": "Regency Nem Insurance Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 10,
@@ -1567,7 +1567,7 @@ const sample =
         "answers": [
             {
                 "id": 172,
-                "answer": "Absa Bank Ghana Limited",
+                "answer": "Absa Bank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "CHECKBOX",
                 "sector_id": 1,
@@ -1576,7 +1576,7 @@ const sample =
             },
             {
                 "id": 173,
-                "answer": "Access Bank (Ghana) Plc",
+                "answer": "Access Bank (Nigeria) Plc",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1594,7 +1594,7 @@ const sample =
             },
             {
                 "id": 175,
-                "answer": "Bank of Africa Ghana Limited",
+                "answer": "Bank of Africa Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1612,7 +1612,7 @@ const sample =
             },
             {
                 "id": 177,
-                "answer": "Consolidated Bank Ghana Limited",
+                "answer": "Consolidated Bank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1621,7 +1621,7 @@ const sample =
             },
             {
                 "id": 178,
-                "answer": "Ecobank Ghana Limited",
+                "answer": "Ecobank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1630,7 +1630,7 @@ const sample =
             },
             {
                 "id": 179,
-                "answer": "FBNBank (Ghana) Limited",
+                "answer": "FBNBank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1639,7 +1639,7 @@ const sample =
             },
             {
                 "id": 180,
-                "answer": "Fidelity Bank Ghana Limited",
+                "answer": "Fidelity Bank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1657,7 +1657,7 @@ const sample =
             },
             {
                 "id": 182,
-                "answer": "First National Bank (Ghana) Limited",
+                "answer": "First National Bank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1684,7 +1684,7 @@ const sample =
             },
             {
                 "id": 185,
-                "answer": "Guaranty Trust Bank (Ghana) Limited",
+                "answer": "Guaranty Trust Bank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1702,7 +1702,7 @@ const sample =
             },
             {
                 "id": 187,
-                "answer": "OmniBSIC Bank Ghana Limited",
+                "answer": "OmniBSIC Bank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1720,7 +1720,7 @@ const sample =
             },
             {
                 "id": 189,
-                "answer": "Republic Bank (Ghana) Limited",
+                "answer": "Republic Bank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1729,7 +1729,7 @@ const sample =
             },
             {
                 "id": 190,
-                "answer": "Societe General (Ghana) Limited",
+                "answer": "Societe General (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1738,7 +1738,7 @@ const sample =
             },
             {
                 "id": 191,
-                "answer": "Stanbic Bank Ghana Limited",
+                "answer": "Stanbic Bank Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1747,7 +1747,7 @@ const sample =
             },
             {
                 "id": 192,
-                "answer": "Standard Chartered Bank (Ghana) Limited",
+                "answer": "Standard Chartered Bank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1756,7 +1756,7 @@ const sample =
             },
             {
                 "id": 193,
-                "answer": "United Bank for Africa (Ghana) Limited",
+                "answer": "United Bank for Africa (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1774,7 +1774,7 @@ const sample =
             },
             {
                 "id": 195,
-                "answer": "Zenith Bank (Ghana) Limited",
+                "answer": "Zenith Bank (Nigeria) Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 1,
@@ -1783,7 +1783,7 @@ const sample =
             },
             {
                 "id": 196,
-                "answer": "Electricity Company of Ghana",
+                "answer": "Electricity Company of Nigeria",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 2,
@@ -1792,7 +1792,7 @@ const sample =
             },
             {
                 "id": 197,
-                "answer": "Ghana Water Company",
+                "answer": "Nigeria Water Company",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 2,
@@ -1801,7 +1801,7 @@ const sample =
             },
             {
                 "id": 198,
-                "answer": "Zoomlion Ghana Limited",
+                "answer": "Zoomlion Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 2,
@@ -2242,7 +2242,7 @@ const sample =
             },
             {
                 "id": 247,
-                "answer": "University of Ghana Medical Center (UGMC)",
+                "answer": "University of Nigeria Medical Center (UGMC)",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 5,
@@ -2413,7 +2413,7 @@ const sample =
             },
             {
                 "id": 266,
-                "answer": "Ghana Broadcasting Corporation",
+                "answer": "Nigeria Broadcasting Corporation",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 7,
@@ -2422,7 +2422,7 @@ const sample =
             },
             {
                 "id": 267,
-                "answer": "Ghana Civil Aviation Authority",
+                "answer": "Nigeria Civil Aviation Authority",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 7,
@@ -2431,7 +2431,7 @@ const sample =
             },
             {
                 "id": 268,
-                "answer": "Ghana Free Zones Board",
+                "answer": "Nigeria Free Zones Board",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 7,
@@ -2440,7 +2440,7 @@ const sample =
             },
             {
                 "id": 269,
-                "answer": "Ghana Investment Promotion Centre",
+                "answer": "Nigeria Investment Promotion Centre",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 7,
@@ -2449,7 +2449,7 @@ const sample =
             },
             {
                 "id": 270,
-                "answer": "Ghana Police Service",
+                "answer": "Nigeria Police Service",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 7,
@@ -2458,7 +2458,7 @@ const sample =
             },
             {
                 "id": 271,
-                "answer": "Ghana Revenue Authority",
+                "answer": "Nigeria Revenue Authority",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 7,
@@ -2467,7 +2467,7 @@ const sample =
             },
             {
                 "id": 272,
-                "answer": "Ghana Shippers Authority",
+                "answer": "Nigeria Shippers Authority",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 7,
@@ -2476,7 +2476,7 @@ const sample =
             },
             {
                 "id": 273,
-                "answer": "Ghana Standards Authority",
+                "answer": "Nigeria Standards Authority",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 7,
@@ -2575,7 +2575,7 @@ const sample =
             },
             {
                 "id": 284,
-                "answer": "Melcome Ghana Online Shopping",
+                "answer": "Melcome Nigeria Online Shopping",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 8,
@@ -2674,7 +2674,7 @@ const sample =
             },
             {
                 "id": 295,
-                "answer": "Activa International Insurance Company-Ghana Limited",
+                "answer": "Activa International Insurance Company-Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 10,
@@ -2719,7 +2719,7 @@ const sample =
             },
             {
                 "id": 300,
-                "answer": "Ghana Life Insurance Company",
+                "answer": "Nigeria Life Insurance Company",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 10,
@@ -2728,7 +2728,7 @@ const sample =
             },
             {
                 "id": 301,
-                "answer": "Ghana Life Insurance Company",
+                "answer": "Nigeria Life Insurance Company",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 10,
@@ -2746,7 +2746,7 @@ const sample =
             },
             {
                 "id": 303,
-                "answer": "Hollard Insurance Ghana Limited",
+                "answer": "Hollard Insurance Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 10,
@@ -2773,7 +2773,7 @@ const sample =
             },
             {
                 "id": 306,
-                "answer": "Metropolitan Life Insurance Ghana Limited",
+                "answer": "Metropolitan Life Insurance Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 10,
@@ -2800,7 +2800,7 @@ const sample =
             },
             {
                 "id": 309,
-                "answer": "Prudential Life Insurance Ghana",
+                "answer": "Prudential Life Insurance Nigeria",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 10,
@@ -2809,7 +2809,7 @@ const sample =
             },
             {
                 "id": 310,
-                "answer": "Regency Nem Insurance Ghana Limited",
+                "answer": "Regency Nem Insurance Nigeria Limited",
                 "answer_title": null,
                 "answer_type": "RADIO",
                 "sector_id": 10,
@@ -3145,7 +3145,7 @@ const sample =
     {
         "id": 7,
         "answers": [],
-        "question": "Overall, what are your impressions on customer service in Ghana's BANKING_SECTOR?",
+        "question": "Overall, what are your impressions on customer service in Nigeria's BANKING_SECTOR?",
         "response_type": "Text"
     },
     {
@@ -4191,7 +4191,7 @@ const sample =
         "answers": [
             {
                 "id": 450,
-                "answer": "Ghanaian",
+                "answer": "Nigerian",
                 "answer_title": null,
                 "answer_type": "SELECT",
                 "sector_id": null,
@@ -4200,7 +4200,7 @@ const sample =
             },
             {
                 "id": 451,
-                "answer": "Non-Ghanaian",
+                "answer": "Non-Nigerian",
                 "answer_title": null,
                 "answer_type": "SELECT",
                 "sector_id": null,
